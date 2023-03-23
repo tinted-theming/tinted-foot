@@ -8,7 +8,7 @@ Clone base16-foot to be able to reference the colorschemes.
 
 ```shell
 git clone \
-  https://github.com/base16-project/base16-foot.git \
+  https://github.com/tinted-theming/base16-foot.git \
   "$HOME/.config/base16-foot"
 ```
 
@@ -24,6 +24,6 @@ include=~/.config/base16-foot/colors/base16-ayu-dark.ini
 
 [Original repo][sourcehut-foot-repo-link]
 
-[base16-home-link]: https://github.com/base16-project/home
+[base16-home-link]: https://github.com/tinted-theming/home
 [foot-link]: https://codeberg.org/dnkl/foot
 [sourcehut-foot-repo-link]: https://git.sr.ht/~h4n1/base16-foot
