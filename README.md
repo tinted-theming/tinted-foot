@@ -1,15 +1,16 @@
-# base16-foot
+# Tinted Foot
 
-[base16][base16-home-link] template for [foot][foot-link].
+[Tinted Theming] template for [foot]. Includes both [base16] and
+[base24] themes.
 
 ## Installation
 
+### Manual
+
 Clone base16-foot to be able to reference the colorschemes.
 
-```shell
-git clone \
-  https://github.com/tinted-theming/base16-foot.git \
-  "$HOME/.config/base16-foot"
+```sh
+git clone https://github.com/tinted-theming/tinted-foot.git "$HOME/.config/tinted-theming/tinted-foot"
 ```
 
 Include the following in your theme in your `foot.ini` (usually stored at
@@ -17,13 +18,36 @@ Include the following in your theme in your `foot.ini` (usually stored at
 at the beginning of the file.
 
 ```ini
-include=~/.config/base16-foot/colors/base16-ayu-dark.ini
+include=~/.config/tinted-theming/tinted-foot/colors/base16-ayu-dark.ini
 ```
 
-## Other
+### Tinty
 
-[Original repo][sourcehut-foot-repo-link]
+If you use [Tinty] to apply your themes, complete the following steps to
+update your theme when running `tinty apply base16-ayu-dark` (where
+`base16-ayu-dark` is a placeholder scheme name):
 
-[base16-home-link]: https://github.com/tinted-theming/home
-[foot-link]: https://codeberg.org/dnkl/foot
-[sourcehut-foot-repo-link]: https://git.sr.ht/~h4n1/base16-foot
+1. Add the following `toml` settings to your Tinty
+   `~/.config/tinted-theming/tinty/config.toml` file:
+
+   ```toml
+   [[items]]
+   path = "https://github.com/tinted-theming/tinted-foot"
+   name = "tinted-foot"
+   themes-dir = "colors"
+   supported-systems = ["base16", "base24"]
+   ```
+
+2. Add the following include to `$HOME/.config/foot/foot.ini`:
+
+   ```ini
+   include=~/.local/share/tinted-theming/tinty/tinted-foot-colors-file.ini
+   ```
+
+3. `tinty apply base16-ayu-dark` will change your foot theme.
+
+For more information, have a look at the [Tinty] GitHub page.
+
+[Tinted Theming]: https://github.com/tinted-theming/home
+[foot]: https://codeberg.org/dnkl/foot
+[Tinty]: https://github.com/tinted-theming/tinty
