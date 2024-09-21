@@ -51,3 +51,5 @@ For more information, have a look at the [Tinty] GitHub page.
 [Tinted Theming]: https://github.com/tinted-theming/home
 [foot]: https://codeberg.org/dnkl/foot
 [Tinty]: https://github.com/tinted-theming/tinty
+[base16]: https://github.com/tinted-theming/home
+[base24]: https://github.com/tinted-theming/base24
