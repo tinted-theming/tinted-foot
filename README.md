@@ -1,5 +1,11 @@
 # Tinted Foot
 
+**Deprecated**: tinted-foot and all the other Tinted Theming
+terminal template repositories have moved to a single [Tinted
+Terminal](https://github.com/tinted-theming/tinted-terminal) repository.
+
+---
+
 [Tinted Theming] template for [foot]. Includes both [base16] and
 [base24] themes.
 
